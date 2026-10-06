@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="images/favicon.png">
+    <title>BLOG - Pato Restaurant</title>
+    <link rel="stylesheet" href="stylesheets/blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+   <!--adding checkbox to check or uncheck the menu button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <!-- sidebar will be displayed when menubar is checked -->
+    <aside class="sidebar">
+        <label for="menu-toggle" class="close-btn">&times;</label>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <a href="reservation.html" class="sidebar-btn">RESERVATION</a>
+
+        <div class="sidebar-gallery">
+            <h3>GALLERY</h3>
+            <div class="gallery-grid">
+                <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Top Red Line -->
+        <div class="top-red-bar"></div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="index.html">
+                        <img src="images/logo1.png" alt="Pato Logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-mid">
+                    <ul>
+                        <li><a href="index.html" class="link">HOME</a></li>
+                        <li><a href="menu.html" class="link">MENU</a></li>
+                        <li><a href="reservation.html" class="link">RESERVATION</a></li>
+                        <li><a href="gallery.html" class="link">GALLERY</a></li>
+                        <li><a href="about.html" class="link">ABOUT</a></li>
+                        <li><a href="blog.html" class="link">BLOG</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <label for="menu-toggle" class="menu-btn">
+                        <img class="menu-logo" src="images/menu.svg" alt="menu-icon">
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Page Hero Banner -->
+        <section class="page-hero blog-hero">
+            <h1 class="page-title">BLOG</h1>
+        </section>
+
+        <!-- Main Blog Feed Section -->
+        <section class="blog-feed-section">
+            <div class="blog-feed-container">
+                
+                <!-- Blog Post 1 -->
+                <article class="blog-post-card">
+                    <div class="post-img-wrapper">
+                        <img src="images/blogimg-01.webp" alt="Cooking Recipe Delicious">
+                        <div class="date-badge">
+                            <span class="day">28</span>
+                            <span class="month-year">Dec, 2018</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">COOKING RECIPE DELICIOUS</a></h2>
+                        <div class="post-meta">
+                            <span>By Admin</span>
+                            <span class="divider">|</span>
+                            <span>28 December, 2018</span>
+                            <span class="divider">|</span>
+                            <span>Cooking, Food</span>
+                            <span class="divider">|</span>
+                            <span>8 Comments</span>
+                        </div>
+                        <p class="post-excerpt">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="blog-post-card">
+                    <div class="post-img-wrapper">
+                        <img src="images/blogimg-02.webp" alt="Pizza is Prepared Fresh">
+                        <div class="date-badge">
+                            <span class="day">20</span>
+                            <span class="month-year">Dec, 2018</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">PIZZA IS PREPARED FRESH</a></h2>
+                        <div class="post-meta">
+                            <span>By Admin</span>
+                            <span class="divider">|</span>
+                            <span>20 December, 2018</span>
+                            <span class="divider">|</span>
+                            <span>Cooking, Food</span>
+                            <span class="divider">|</span>
+                            <span>8 Comments</span>
+                        </div>
+                        <p class="post-excerpt">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="blog-post-card">
+                    <div class="post-img-wrapper">
+                        <img src="images/blogimg-03.webp" alt="Style the Wedding Party">
+                        <div class="date-badge">
+                            <span class="day">16</span>
+                            <span class="month-year">Dec, 2018</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">STYLE THE WEDDING PARTY</a></h2>
+                        <div class="post-meta">
+                            <span>By Admin</span>
+                            <span class="divider">|</span>
+                            <span>16 December, 2018</span>
+                            <span class="divider">|</span>
+                            <span>Cooking, Food</span>
+                            <span class="divider">|</span>
+                            <span>8 Comments</span>
+                        </div>
+                        <p class="post-excerpt">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="blog-post-card">
+                    <div class="post-img-wrapper">
+                        <img src="images/blogimg-04.webp" alt="Best Places for Wine">
+                        <div class="date-badge">
+                            <span class="day">12</span>
+                            <span class="month-year">Dec, 2018</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <h2 class="post-title"><a href="#">BEST PLACES FOR WINE</a></h2>
+                        <div class="post-meta">
+                            <span>By Admin</span>
+                            <span class="divider">|</span>
+                            <span>12 December, 2018</span>
+                            <span class="divider">|</span>
+                            <span>Cooking, Food</span>
+                            <span class="divider">|</span>
+                            <span>8 Comments</span>
+                        </div>
+                        <p class="post-excerpt">
+                            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce eget dictum tortor. Donec dictum vitae sapien eu varius.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+          <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Contact Us  -->
+            <div class="footer-col">
+                <h3>CONTACT US</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</li>
+                    <li><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@site.com</li>
+                </ul>
+
+                <h3 class="opening-title">OPENING TIMES</h3>
+                <p class="opening-time">09:30 AM – 11:00 PM</p>
+                <p class="opening-days">Every Day</p>
+            </div>
+
+            <!-- Col 2: Latest Posts -->
+            <div class="footer-col">
+                <h3>LATEST POSTS</h3>
+                <div class="tweet-item">
+                    <p> <a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+                <div class="tweet-item">
+                    <p><a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+            </div>
+
+            <!-- Col 3: Gallery -->
+            <div class="footer-col">
+                <h3>GALLERY</h3>
+                <div class="footer-gallery">
+                    <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                    <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                    <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                    <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                    <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                    <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                    <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                    <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                    <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-Footer Bottom Bar -->
+        <div class="sub-footer">
+            <div class="sub-footer-container">
+                <div class="copyright">
+                    @ 2026 Colorlib: <a href="#">Get The Theme</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

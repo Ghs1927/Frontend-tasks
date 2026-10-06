@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="images/favicon.png">
+    <title>PATO RESTAURANT</title>
+    <link rel="stylesheet" href="stylesheets/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!--adding checkbox to check or uncheck the menu button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <!-- sidebar will be displayed when menubar is checked -->
+    <aside class="sidebar">
+        <label for="menu-toggle" class="close-btn">&times;</label>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <a href="reservation.html" class="sidebar-btn">RESERVATION</a>
+
+        <div class="sidebar-gallery">
+            <h3>GALLERY</h3>
+            <div class="gallery-grid">
+                <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Top Red Line -->
+        <div class="top-red-bar"></div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="index.html">
+                        <img src="images/logo1.png" alt="Pato Logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-mid">
+                    <ul>
+                        <li><a href="index.html" class="link">HOME</a></li>
+                        <li><a href="menu.html" class="link">MENU</a></li>
+                        <li><a href="reservation.html" class="link">RESERVATION</a></li>
+                        <li><a href="gallery.html" class="link">GALLERY</a></li>
+                        <li><a href="about.html" class="link">ABOUT</a></li>
+                        <li><a href="blog.html" class="link">BLOG</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <label for="menu-toggle" class="menu-btn">
+                        <img class="menu-logo" src="images/menu.svg" alt="menu-icon">
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Wrapper -->
+        <section class="hero-section">
+            <div class="backimg-container">
+                <div class="slide-wrapper">
+                    <img src="images/home-backimg.jpg" alt="" class="image image1">
+                    <img src="images/home-backimg2.jpg" alt="" class="image image2">
+                    <img src="images/home-backimg3.jpg" alt="" class="image image3">
+                </div>
+            </div>
+
+            <div class="hero-content">
+                <div class="hero-subtitle">Welcome to</div>
+                <h1 class="hero-title">PATO PLACE</h1>
+                <a href="menu.html" class="hero-btn">LOOK MENU</a>
+            </div>
+        </section>
+
+        <!-- welcome section -->
+        <section class="welcome-section">
+            <div class="welcome-container">
+                <div class="welcome-text">
+                    <div class="welcome-subtitle">Italian Restaurant</div>
+                    <h2 class="welcome-title">WELCOME</h2>
+                    <p class="welcome-desc">
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed
+                        fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis
+                        ligula sem id neque.
+                    </p>
+                    <a href="about.html" class="story-link">
+                        OUR STORY <i class="fa-solid fa-arrow-right-long"></i>
+                    </a>
+                </div>
+
+                <div class="welcome-img">
+                    <img src="images/our-story-01.webp" alt="Italian Dish - Salmon Salad">
+                </div>
+            </div>
+        </section>
+
+        <!-- background Fixed Banner ("Discover PATO PLACE") -->
+        <section class="background-banner">
+            <div class="background-content">
+                <div class="background-subtitle">Discover</div>
+                <h2 class="background-title">PATO PLACE</h2>
+            </div>
+        </section>
+
+        <!-- Feature Cards Grid Component -->
+        <section class="intro-section">
+            <div class="intro-grid">
+                <!-- Card 1 -->
+                <div class="intro-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/intro-01.jpg" alt="Romantic Restaurant">
+                    </div>
+                    <h3>ROMANTIC RESTAURANT</h3>
+                    <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.</p>
+                    <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="intro-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/intro-02.jpg" alt="Delicious Food">
+                    </div>
+                    <h3>DELICIOUS FOOD</h3>
+                    <p>Aliquam eget aliquam magna, quis posuere risus ac justo ipsum nibh urna.</p>
+                    <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="intro-card">
+                    <div class="card-img-wrapper">
+                        <img src="images/intro-04.jpg" alt="Red Wines You Love">
+                    </div>
+                    <h3>RED WINES YOU LOVE</h3>
+                    <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                    <a href="#">LEARN MORE <i class="fa-solid fa-arrow-right-long"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Menu Section -->
+        <section class="menu-section">
+            <div class="section-header">
+                <div class="section-subtitle">Discover</div>
+                <h2 class="section-title">OUR MENU</h2>
+            </div>
+
+            <div class="menu-bento-grid">
+                <!-- Lunch -->
+                <div class="menu-card card-lunch">
+                    <img src="images/our-menu-01.jpg" alt="Lunch Menu">
+                    <a href="menu.html" class="menu-pill-btn">LUNCH</a>
+                </div>
+
+                <!-- Dinner -->
+                <div class="menu-card card-dinner">
+                    <img src="images/our-menu-02.jpg" alt="Dinner Menu">
+                    <a href="menu.html" class="menu-pill-btn">DINNER</a>
+                </div>
+
+                <!-- Drink -->
+                <div class="menu-card card-drink">
+                    <img src="images/our-menu-03.jpg" alt="Drink Menu">
+                    <a href="menu.html" class="menu-pill-btn">DRINK</a>
+                </div>
+
+                <!-- Starters -->
+                <div class="menu-card card-starters">
+                    <img src="images/our-menu-4.jpg" alt="Starters Menu">
+                    <a href="menu.html" class="menu-pill-btn">STARTERS</a>
+                </div>
+
+                <!-- Happy Hour -->
+                <div class="menu-card card-happyhour">
+                    <img src="images/our-menu-5.jpg" alt="Happy Hour Menu">
+                    <a href="menu.html" class="menu-pill-btn">HAPPY HOUR</a>
+                </div>
+
+                <!-- Dessert -->
+                <div class="menu-card card-dessert">
+                    <img src="images/our-menu-6.jpg" alt="Dessert Menu">
+                    <a href="menu.html" class="menu-pill-btn">DESSERT</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reservation / Book Table Section -->
+        <section class="booking-section">
+            <div class="booking-container">
+                <div class="booking-form-col">
+                    <div class="section-header left-align">
+                        <div class="section-subtitle">Reservation</div>
+                        <h2 class="section-title">BOOK TABLE</h2>
+                    </div>
+
+                    <form class="booking-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Date</label>
+                                <input type="date" value="2026-11-21">
+                            </div>
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" placeholder="Name">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Time</label>
+                                <select>
+                                    <option>9:00</option>
+                                    <option>12:00</option>
+                                    <option>15:00</option>
+                                    <option>18:00</option>
+                                    <option>21:00</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="tel" placeholder="Phone">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>People</label>
+                                <select>
+                                    <option>1 person</option>
+                                    <option>2 people</option>
+                                    <option>3 people</option>
+                                    <option>4 people</option>
+                                    <option>5+ people</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <button type="submit" class="submit-btn">BOOK TABLE</button>
+                    </form>
+                </div>
+
+                <div class="booking-img-col">
+                    <img src="images/booking-01.jpg" alt="Table Setting">
+                </div>
+            </div>
+        </section>
+
+        <!-- Customer Review Section -->
+        <section class="review-section">
+            <div class="section-header">
+                <div class="section-subtitle">Customers Say</div>
+                <h2 class="section-title">REVIEW</h2>
+            </div>
+
+            <div class="review-card">
+                <div class="reviewer-avatar">
+                    <img src="images/avatar-01.jpg" alt="Marie Simmons">
+                </div>
+                <blockquote class="review-quote">
+                    “ We are lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tellus sem, mattis in
+                    pretium nec, fermentum viverra dui ”
+                </blockquote>
+                <div class="review-stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="reviewer-name">MARIE SIMMONS - NEW YORK</div>
+            </div>
+    </div>
+
+    </section>
+
+    <!-- Our Video Section -->
+    <section class="video-background-section">
+        <div class="video-content">
+            <div class="background-subtitle">Discover</div>
+            <h2 class="background-title">OUR VIDEO</h2>
+            <a href="https://www.youtube.com/watch?v=5k1hSu2gdKE" target="_blank" class="play-btn">
+                <i class="fa-solid fa-play"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- The Blog Section -->
+    <section class="blog-section">
+        <div class="section-header">
+            <div class="section-subtitle">Latest News</div>
+            <h2 class="section-title">THE BLOG</h2>
+        </div>
+
+        <div class="blog-grid">
+            <!-- Blog 1 -->
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="images/blog-01.webp" alt="Best Places For Wine">
+                    <span class="blog-date">21 Dec 2017</span>
+                </div>
+                <h3>BEST PLACES FOR WINE</h3>
+                <p>Phasellus lorem enim, luctus ut velit eget, convallis egestas eros.</p>
+                <a href="#">CONTINUE READING <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Blog 2 -->
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="images/blog-01.jpg" alt="Eggs And Cheese">
+                    <span class="blog-date">15 Dec 2017</span>
+                </div>
+                <h3>EGGS AND CHEESE</h3>
+                <p>Duis elementum, risus sit amet lobortis nunc justo condimentum ligula, vitae feugiat.</p>
+                <a href="#">CONTINUE READING <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+
+            <!-- Blog 3 -->
+            <div class="blog-card">
+                <div class="blog-img-wrapper">
+                    <img src="images/blog-03.jpg" alt="Style The Wedding Party">
+                    <span class="blog-date">12 Dec 2017</span>
+                </div>
+                <h3>STYLE THE WEDDING PARTY</h3>
+                <p>Sed ornare ligula eget tortor tempor, quis porta tellus dictum.</p>
+                <a href="#">CONTINUE READING <i class="fa-solid fa-arrow-right-long"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Specials Sign-Up Banner -->
+    <section class="newsletter-section">
+        <div class="newsletter-card">
+            <h3>SPECIALS SIGN UP</h3>
+            <form class="newsletter-form">
+                <div class="input-wrapper">
+                    <input type="email" placeholder="Email Address" required>
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <button type="submit" class="signup-btn">SIGN-UP</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Contact Us  -->
+            <div class="footer-col">
+                <h3>CONTACT US</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</li>
+                    <li><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@site.com</li>
+                </ul>
+
+                <h3 class="opening-title">OPENING TIMES</h3>
+                <p class="opening-time">09:30 AM – 11:00 PM</p>
+                <p class="opening-days">Every Day</p>
+            </div>
+
+            <!-- Col 2: Latest Posts -->
+            <div class="footer-col">
+                <h3>LATEST POSTS</h3>
+                <div class="tweet-item">
+                    <p> <a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+                <div class="tweet-item">
+                    <p><a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+            </div>
+
+            <!-- Col 3: Gallery -->
+            <div class="footer-col">
+                <h3>GALLERY</h3>
+                <div class="footer-gallery">
+                    <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                    <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                    <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                    <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                    <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                    <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                    <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                    <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                    <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-Footer Bottom Bar -->
+        <div class="sub-footer">
+            <div class="sub-footer-container">
+                <div class="copyright">
+                    @ 2026 Colorlib: <a href="#">Get The Theme</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

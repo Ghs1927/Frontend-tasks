@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="favicon" href="images/favicon.png">
+    <title>ABOUT US - Pato Restaurant</title>
+    <link rel="stylesheet" href="stylesheets/about.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+     <!--adding checkbox to check or uncheck the menu button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <!-- sidebar will be displayed when menubar is checked -->
+    <aside class="sidebar">
+        <label for="menu-toggle" class="close-btn">&times;</label>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <a href="reservation.html" class="sidebar-btn">RESERVATION</a>
+
+        <div class="sidebar-gallery">
+            <h3>GALLERY</h3>
+            <div class="gallery-grid">
+                <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Top Red Line -->
+        <div class="top-red-bar"></div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="index.html">
+                        <img src="images/logo1.png" alt="Pato Logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-mid">
+                    <ul>
+                        <li><a href="index.html" class="link">HOME</a></li>
+                        <li><a href="menu.html" class="link">MENU</a></li>
+                        <li><a href="reservation.html" class="link">RESERVATION</a></li>
+                        <li><a href="gallery.html" class="link">GALLERY</a></li>
+                        <li><a href="about.html" class="link">ABOUT</a></li>
+                        <li><a href="blog.html" class="link">BLOG</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <label for="menu-toggle" class="menu-btn">
+                        <img class="menu-logo" src="images/menu.svg" alt="menu-icon">
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Hero Banner Section -->
+        <section class="page-hero about-hero">
+            <h1 class="page-title">ABOUT US</h1>
+        </section>
+
+        <!-- Our Story Section -->
+        <section class="story-section">
+            <div class="story-container">
+                <div class="section-header">
+                    <div class="section-subtitle">Italian Restaurant</div>
+                    <h2 class="section-title">OUR STORY</h2>
+                </div>
+                <p class="story-text">
+                    Fusce at risus eget mi auctor pulvinar. Suspendisse maximus venenatis pretium. Orci varius natoque penatibus et
+                    magnis dis parturient montes, nascetur ridiculus mus. Aliquam purus purus, lacinia a scelerisque in, luctus vel felis.
+                    Donec odio diam, dignissim a efficitur at, efficitur et est. Pellentesque semper est ut pulvinar ullamcorper.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Video Section -->
+        <section class="video-background-section">
+            <div class="video-content">
+                <div class="background-subtitle">Discover</div>
+                <h2 class="background-title">OUR VIDEO</h2>
+                <a href="https://www.youtube.com/watch?v=5k1hSu2gdKE" target="_blank" class="play-btn">
+                    <i class="fa-solid fa-play"></i>
+                </a>
+            </div>
+        </section>
+
+        <!-- Delicious Recipes Section -->
+        <section class="about-feature-section">
+            <div class="feature-container">
+                <div class="feature-text-col">
+                    <div class="section-subtitle">Delicious</div>
+                    <h2 class="section-title">RECIPES</h2>
+                    <p class="feature-desc">
+                        Donec quis lorem nulla. Nunc eu odio mi. Morbi nec lobortis est. Sed fringilla, nunc sed imperdiet lacinia, nisl ante egestas mi, ac facilisis ligula sem id neque.
+                    </p>
+                </div>
+                <div class="feature-img-col">
+                    <img src="images/our-story-01.webp" alt="Delicious Recipes - Salmon Dish">
+                </div>
+            </div>
+        </section>
+
+        <!-- Romantic Restaurant Section -->
+        <section class="about-feature-section reverse-bg">
+            <div class="feature-container reverse-layout">
+                <div class="feature-img-col">
+                    <img src="images/intro-01.jpg" alt="Romantic Restaurant View">
+                </div>
+                <div class="feature-text-col">
+                    <div class="section-subtitle">Romantic</div>
+                    <h2 class="section-title">RESTAURANT</h2>
+                    <p class="feature-desc">
+                        Fusce iaculis, quam quis volutpat cursus, tellus quam varius eros, in euismod lorem nisi in ante. Maecenas imperdiet vulputate dui sit amet vestibulum. Nulla quis suscipit nisl.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- background Divider Banner -->
+        <section class="background-divider"></section>
+
+        <!-- Meet Our Chef Section -->
+        <section class="chef-section">
+            <div class="section-header">
+                <div class="section-subtitle">Meet Our</div>
+                <h2 class="section-title">CHEF</h2>
+            </div>
+
+            <div class="chef-grid">
+                <!-- Chef Card 1 -->
+                <div class="chef-card">
+                    <div class="chef-avatar">
+                        <img src="images/avatar-02.webp" alt="Peter Hart">
+                    </div>
+                    <h3>Peter Hart</h3>
+                    <span class="chef-role">CHEF</span>
+                    <p>Donec porta eleifend mauris ut efficitur. Quisque non velit vestibulum, lobortis mi eget, rhoncus nunc.</p>
+                </div>
+
+                <!-- Chef Card 2 -->
+                <div class="chef-card">
+                    <div class="chef-avatar">
+                        <img src="images/avatar-03.webp" alt="Joyce Bowman">
+                    </div>
+                    <h3>Joyce Bowman</h3>
+                    <span class="chef-role">CHEF</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies felis a sem tempus tempus.</p>
+                </div>
+
+                <!-- Chef Card 3 -->
+                <div class="chef-card">
+                    <div class="chef-avatar">
+                        <img src="images/avatar-04.webp" alt="Peter Hart">
+                    </div>
+                    <h3>Peter Hart</h3>
+                    <span class="chef-role">CHEF</span>
+                    <p>Phasellus aliquam libero a nisi varius, vitae placerat sem aliquet. Ut at velit nec ipsum iaculis posuere quis in sapien.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specials Sign-Up Banner -->
+        <section class="newsletter-section">
+            <div class="newsletter-card">
+                <h3>SPECIALS SIGN UP</h3>
+                <form class="newsletter-form">
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Email Address" required>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <button type="submit" class="signup-btn">SIGN-UP</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Contact Us  -->
+            <div class="footer-col">
+                <h3>CONTACT US</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</li>
+                    <li><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@site.com</li>
+                </ul>
+
+                <h3 class="opening-title">OPENING TIMES</h3>
+                <p class="opening-time">09:30 AM – 11:00 PM</p>
+                <p class="opening-days">Every Day</p>
+            </div>
+
+            <!-- Col 2: Latest Posts -->
+            <div class="footer-col">
+                <h3>LATEST POSTS</h3>
+                <div class="tweet-item">
+                    <p> <a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+                <div class="tweet-item">
+                    <p><a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+            </div>
+
+            <!-- Col 3: Gallery -->
+            <div class="footer-col">
+                <h3>GALLERY</h3>
+                <div class="footer-gallery">
+                    <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                    <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                    <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                    <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                    <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                    <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                    <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                    <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                    <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-Footer Bottom Bar -->
+        <div class="sub-footer">
+            <div class="sub-footer-container">
+                <div class="copyright">
+                    @ 2026 Colorlib: <a href="#">Get The Theme</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>

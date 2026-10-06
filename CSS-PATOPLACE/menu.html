@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="favicon" href="images/favicon.png">
+    <title>MENU - Pato Restaurant</title>
+    <link rel="stylesheet" href="stylesheets/menu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!--adding checkbox to check or uncheck the menu button -->
+    <input type="checkbox" id="menu-toggle" hidden>
+
+    <!-- sidebar will be displayed when menubar is checked -->
+    <aside class="sidebar">
+        <label for="menu-toggle" class="close-btn">&times;</label>
+
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="menu.html">MENU</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </nav>
+
+        <a href="reservation.html" class="sidebar-btn">RESERVATION</a>
+
+        <div class="sidebar-gallery">
+            <h3>GALLERY</h3>
+            <div class="gallery-grid">
+                <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Container -->
+    <div class="container">
+
+        <!-- Top Red Line -->
+        <div class="top-red-bar"></div>
+
+        <!-- Header Section -->
+        <header class="header">
+            <nav class="nav-bar">
+                <div class="nav-left">
+                    <a href="index.html">
+                        <img src="images/logo1.png" alt="Pato Logo" class="logo">
+                    </a>
+                </div>
+
+                <div class="nav-mid">
+                    <ul>
+                        <li><a href="index.html" class="link">HOME</a></li>
+                        <li><a href="menu.html" class="link">MENU</a></li>
+                        <li><a href="reservation.html" class="link">RESERVATION</a></li>
+                        <li><a href="gallery.html" class="link">GALLERY</a></li>
+                        <li><a href="about.html" class="link">ABOUT</a></li>
+                        <li><a href="blog.html" class="link">BLOG</a></li>
+                        <li><a href="contact.html" class="link">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-right">
+                    <label for="menu-toggle" class="menu-btn">
+                        <img class="menu-logo" src="images/menu.svg" alt="menu-icon">
+                    </label>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Page Hero Banner -->
+        <section class="page-hero menu-hero">
+            <h1 class="page-title">PATO MENU</h1>
+        </section>
+
+        <!-- Main Text Menu Section  -->
+        <section class="text-menu-section">
+            <div class="menu-columns-container">
+                <div class="menu-column">
+                    <div class="menu-category">
+                        <h2 class="category-title">STARTERS</h2>
+                        <ul class="menu-item-list">
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">PINE NUT SBRISALONA</h3>
+                                    <p class="item-desc">Sed fermentum eros vitae eros</p>
+                                </div>
+                                <span class="item-price">$29.79</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">AENEAN EU</h3>
+                                    <p class="item-desc">Feugiat maximus neque pharetra</p>
+                                </div>
+                               
+                                <span class="item-price">$19.35</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">SED FEUGIAT</h3>
+                                    <p class="item-desc">Proin lacinia nisl ut ultricies posuere nulla</p>
+                                </div>
+                                
+                                <span class="item-price">$12.19</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">CONSECTETUR</h3>
+                                    <p class="item-desc">Etiam cursus facilisis tortor</p>
+                                </div>
+                               
+                                <span class="item-price">$21.89</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category">
+                        <h2 class="category-title">DRINKS</h2>
+                        <ul class="menu-item-list">
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">VIVAMUS PRETIUM</h3>
+                                    <p class="item-desc">Sed fermentum eros vitae eros</p>
+                                </div>
+                                <span class="dots"></span>
+                                <span class="item-price">$29.79</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">DUIS PHARETRA LIGULA</h3>
+                                    <p class="item-desc">Feugiat maximus neque pharetra</p>
+                                </div>
+                               
+                                <span class="item-price">$19.35</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">IN EU DOLOR</h3>
+                                    <p class="item-desc">Proin lacinia nisl ut ultricies posuere nulla</p>
+                                </div>
+                               
+                                <span class="item-price">$53.34</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">FEUGIAT MAXIMUS</h3>
+                                    <p class="item-desc">Sed fermentum eros vitae eros</p>
+                                </div>
+                                
+                                <span class="item-price">$62.45</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="menu-column">
+                    <div class="menu-category">
+                        <h2 class="category-title">MAIN</h2>
+                        <ul class="menu-item-list">
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">DUIS SED ALIQUET</h3>
+                                    <p class="item-desc">Proin lacinia nisl ut ultricies posuere nulla</p>
+                                </div>
+                            
+                                <span class="item-price">$31.18</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">SUSPENDISSE</h3>
+                                    <p class="item-desc">Feugiat maximus neque pharetra</p>
+                                </div>
+                            
+                                <span class="item-price">$70.25</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">SCELERISQUE SED</h3>
+                                    <p class="item-desc">Etiam cursus facilisis tortor</p>
+                                </div>
+                            
+                                <span class="item-price">$36.19</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">MOLLIS NULLA</h3>
+                                    <p class="item-desc">Proin lacinia nisl ut ultricies posuere nulla</p>
+                                </div>
+                            
+                                <span class="item-price">$19.50</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">CONVALLIS AUGUE</h3>
+                                    <p class="item-desc">Sed fermentum eros vitae eros</p>
+                                </div>
+                            
+                                <span class="item-price">$29.15</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">MAECENAS TRISTIQUE</h3>
+                                    <p class="item-desc">Feugiat maximus neque pharetra</p>
+                                </div>
+                            
+                                <span class="item-price">$29.79</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">DUIS TINCIDUNT</h3>
+                                    <p class="item-desc">Proin lacinia nisl ut ultricies posuere nulla</p>
+                                </div>
+                            
+                                <span class="item-price">$19.35</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="menu-category">
+                        <h2 class="category-title">DESSERT</h2>
+                        <ul class="menu-item-list">
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">TEMPUS ALIQUET</h3>
+                                    <p class="item-desc">Proin lacinia nisl ut ultricies posuere nulla</p>
+                                </div>
+                            
+                                <span class="item-price">$9.79</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">SCELERISQUE</h3>
+                                    <p class="item-desc">Sed fermentum eros vitae eros</p>
+                                </div>
+                            
+                                <span class="item-price">$19.35</span>
+                            </li>
+                            <li class="menu-item">
+                                <div class="item-info">
+                                    <h3 class="item-name">CRAS MAXIMUS</h3>
+                                    <p class="item-desc">Duis pharetra ligula at urna dignissim</p>
+                                </div>
+                            
+                                <span class="item-price">$5.79</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LUNCH SECTION -->
+        <section class="lunch-section">
+            <div class="background-banner lunch-banner">
+                <h2 class="background-title">LUNCH</h2>
+            </div>
+
+            <div class="visual-menu-container">
+                <div class="visual-menu-grid">
+                    <!-- Item 1 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/lunch-01.webp" alt="Sed Varius">
+                        </div>
+                        <div class="card-details">
+                            <h3>SED VARIUS</h3>
+                            <p>Aenean pharetra tortor dui in pellentesque</p>
+                            <span class="price">$29.79</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/lunch-02.webp" alt="Sbrisalona">
+                        </div>
+                        <div class="card-details">
+                            <h3>SBRISALONA</h3>
+                            <p>Proin lacinia nisl ut ultricies posuere nulla</p>
+                            <span class="price">$29.79</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/lunch-03.webp" alt="Tempus Aliquet">
+                        </div>
+                        <div class="card-details">
+                            <h3>TEMPUS ALIQUET</h3>
+                            <p>Aenean condimentum ante erat</p>
+                            <span class="price">$45.09</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/lunch-04.webp" alt="Cras Eget Magna">
+                        </div>
+                        <div class="card-details">
+                            <h3>CRAS EGET MAGNA</h3>
+                            <p>Sed fermentum eros vitae eros</p>
+                            <span class="price">$45.09</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/lunch-05.webp" alt="Duis Massa">
+                        </div>
+                        <div class="card-details">
+                            <h3>DUIS MASSA</h3>
+                            <p>Proin lacinia nisl ut ultricies posuere nulla</p>
+                            <span class="price">$12.75</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/lunch-06.webp" alt="Nullam Maximus">
+                        </div>
+                        <div class="card-details">
+                            <h3>NULLAM MAXIMUS</h3>
+                            <p>Duis massa nibh porttotor nec imperdiet eget</p>
+                            <span class="price">$12.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- DINNER SECTION -->
+        <section class="dinner-section">
+            <div class="background-banner dinner-banner">
+                <h2 class="background-title">DINNER</h2>
+            </div>
+
+            <div class="visual-menu-container">
+                <div class="visual-menu-grid">
+                    <!-- Item 1 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/dinner-01.webp" alt="Maecenas Tristique">
+                        </div>
+                        <div class="card-details">
+                            <h3>MAECENAS TRISTIQUE</h3>
+                            <p>Aenean pharetra tortor dui in pellentesque</p>
+                            <span class="price">$29.79</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/dinner-02.webp" alt="Cras Maximus">
+                        </div>
+                        <div class="card-details">
+                            <h3>CRAS MAXIMUS</h3>
+                            <p>Proin lacinia nisl ut ultricies posuere nulla</p>
+                            <span class="price">$29.79</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/dinner-03.webp" alt="Pine Nut Sbrisalona">
+                        </div>
+                        <div class="card-details">
+                            <h3>PINE NUT SBRISALONA</h3>
+                            <p>Aenean condimentum ante erat</p>
+                            <span class="price">$45.09</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 4 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/dinner-04.webp" alt="Pine Nut Sbrisalona">
+                        </div>
+                        <div class="card-details">
+                            <h3>PINE NUT SBRISALONA</h3>
+                            <p>Sed fermentum eros vitae eros</p>
+                            <span class="price">$45.09</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 5 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/dinner-05.webp" alt="Suspendisse Eu">
+                        </div>
+                        <div class="card-details">
+                            <h3>SUSPENDISSE EU</h3>
+                            <p>Proin lacinia nisl ut ultricies posuere nulla</p>
+                            <span class="price">$12.75</span>
+                        </div>
+                    </div>
+
+                    <!-- Item 6 -->
+                    <div class="visual-card">
+                        <div class="card-thumb">
+                            <img src="images/dinner-06.webp" alt="Tempor Malesuada">
+                        </div>
+                        <div class="card-details">
+                            <h3>TEMPOR MALESUADA</h3>
+                            <p>Duis massa nibh porttotor nec imperdiet eget</p>
+                            <span class="price">$12.75</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Specials Sign-Up Banner -->
+        <section class="newsletter-section">
+            <div class="newsletter-card">
+                <h3>SPECIALS SIGN UP</h3>
+                <form class="newsletter-form">
+                    <div class="input-wrapper">
+                        <input type="email" placeholder="Email Address" required>
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <button type="submit" class="signup-btn">SIGN-UP</button>
+                </form>
+            </div>
+        </section>
+
+       <!-- Footer Section -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <!-- Col 1: Contact Us  -->
+            <div class="footer-col">
+                <h3>CONTACT US</h3>
+                <ul class="contact-info">
+                    <li><i class="fa-solid fa-location-dot"></i> 8th floor, 379 Hudson St, New York, NY 10018</li>
+                    <li><i class="fa-solid fa-phone"></i> (+1) 96 716 6879</li>
+                    <li><i class="fa-solid fa-envelope"></i> contact@site.com</li>
+                </ul>
+
+                <h3 class="opening-title">OPENING TIMES</h3>
+                <p class="opening-time">09:30 AM – 11:00 PM</p>
+                <p class="opening-days">Every Day</p>
+            </div>
+
+            <!-- Col 2: Latest Posts -->
+            <div class="footer-col">
+                <h3>LATEST POSTS</h3>
+                <div class="tweet-item">
+                    <p> <a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+                <div class="tweet-item">
+                    <p><a href="#">@colorlib</a> Activello is a good option.
+                        It has a slider built into that displays the featured image in the slider. <a
+                            href="#">https://buff.ly/2za0fAQ</a></p>
+                    <span class="tweet-date">21 Dec 2017</span>
+                </div>
+            </div>
+
+            <!-- Col 3: Gallery -->
+            <div class="footer-col">
+                <h3>GALLERY</h3>
+                <div class="footer-gallery">
+                    <img src="images/photo-gallery-01.jpg" alt="Gallery 1">
+                    <img src="images/photo-gallery-02.jpg" alt="Gallery 2">
+                    <img src="images/photo-gallery-03.jpg" alt="Gallery 3">
+                    <img src="images/photo-gallery-04.jpg" alt="Gallery 4">
+                    <img src="images/photo-gallery-05.jpg" alt="Gallery 5">
+                    <img src="images/photo-gallery-06.jpg" alt="Gallery 6">
+                    <img src="images/photo-gallery-07.jpg" alt="Gallery 7">
+                    <img src="images/photo-gallery-08.jpg" alt="Gallery 8">
+                    <img src="images/photo-gallery-09.jpg" alt="Gallery 9">
+                </div>
+            </div>
+        </div>
+
+        <!-- Sub-Footer Bottom Bar -->
+        <div class="sub-footer">
+            <div class="sub-footer-container">
+                <div class="copyright">
+                    @ 2026 Colorlib: <a href="#">Get The Theme</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+</body>
+
+</html>
