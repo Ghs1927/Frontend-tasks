@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Patterns</title>
+</head>
+<body>
+
+<h1>JavaScript Pattern Programs</h1>
+
+<h2>Pattern 1</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let j=1;j<=5;j++){
+        if(j==3||i==3){
+            output+="*"
+        }
+        else{
+            output+=j
+        }
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 2</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let j=1;j<=5;j++){
+        if(j==1||i==1||j==5||i==5){
+            output+="*"
+        }
+        else{
+            output+=j
+        }
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 3</h2>
+<script>
+for(let i=1;i<=8;i++){
+    let output=""
+    for(let j=1;j<=8;j++){
+        if(j==1||i==1||j==8||i==8||j==5||i==5){
+            output+="*"
+        }
+        else{
+            output+=j
+        }
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 4</h2>
+<script>
+for(let i=1;i<=7;i++){
+    let output=""
+    for(let j=1;j<=7;j++){
+        if(i==4||j==4||i==1&&j<=4||i==7&&j>=5||j==7&&i<=4||j==1&&i>=5){
+            output+="*"
+        }
+        else{
+            output+=" "
+        }
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 5</h2>
+<script>
+for(let i=1;i<=9;i++){
+    let output=""
+    for(let j=1;j<=9;j++){
+        if(i==j||j+i==10){
+            output+="*"
+        }
+        else{
+            output+=j
+        }
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 6</h2>
+<script>
+for(let i=1;i<=9;i++){
+    let output=""
+    for(let j=1;j<=9;j++){
+        if(i==j&&i<=5||i>=5&&j==5||j+i==10&&i<=5){
+            output+="*"
+        }
+        else{
+            output+=j
+        }
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 7</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let j=1;j<=i;j++){
+        output+=i
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 8</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let j=1;j<=i;j++){
+        output+=j
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 9</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let j=5;j>=i;j--){
+        output+=j
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 10</h2>
+<script>
+for(let i=5;i>=1;i--){
+    let output=""
+    for(let j=i;j>=1;j--){
+        output+=j
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 11</h2>
+<script>
+for(let i=5;i>=1;i--){
+    let output=""
+    for(let s=4;s>=i;s--){
+        output+=" "
+    }
+    for(let j=1;j<=i;j++){
+        output+=i
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 12</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let s=4;s>=i;s--){
+        output+=" "
+    }
+    for(let j=1;j<=i;j++){
+        output+=i
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+<h2>Pattern 13</h2>
+<script>
+for(let i=1;i<=5;i++){
+    let output=""
+    for(let s=i;s<=5;s++){
+        output+=" "
+    }
+    for(let j=1;j<=i;j++){
+        output+=j
+    }
+    document.write(output+"<br>")
+}
+</script>
+
+</body>
+</html>
