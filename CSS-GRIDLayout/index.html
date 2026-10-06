@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        .container {
+            background-color: blueviolet;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 100px 600px 100px;
+            grid-template-areas: "head head head "
+                "left main right"
+                "footer footer footer";
+        }
+        .box{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+        }
+
+        .header {
+            background-color: aqua;
+            grid-area: head;
+        }
+
+        .left-side {
+            background-color: brown;
+            grid-area: left;
+        }
+
+        .main {
+            background-color: beige;
+            grid-area: main;
+        }
+
+        .right-side {
+            background-color: cadetblue;
+            grid-area: right;
+        }
+
+        .footer {
+            background-color: chocolate;
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box left-side">Left side</div>
+        <div class="box main">main </div>
+        <div class="box right-side">right side</div>
+        <div class="box footer">footer</div>
+    </div>
+
+</body>
+
+</html>

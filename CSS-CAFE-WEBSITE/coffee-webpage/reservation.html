@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    <style>
+         body{
+            background-color:#FFFAF3;
+             height:100vh;
+            width:100%;
+            background-image:linear-gradient(rgba(0, 0, 0, 0.65),rgba(0, 0, 0, 0.65)),url("./images/cafeabout.webp");
+            background-color:rgba(0, 0, 0, 0.224);
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            background-attachment: fixed;
+        }
+        header{
+            text-align: center;
+            background-image:linear-gradient(to right,#3f1d0e,#8A5F41);
+        }
+        h1{
+            color:#FFFAF3;
+            font-size: 40px;
+        }
+        header p{
+            color:#FFFAF3;
+            font-size:18px;
+            font-weight:700px;
+            
+        }
+        a{
+            text-decoration:none;
+            color:yellow;
+            font-size:22px;
+        }
+         h2{
+            font-size:35px;
+            text-align:center; 
+            color:#8A5F41;
+        }
+        .events{
+            color:#8A5F41;
+            border-collapse: collapse;
+            background-color:#FFFAF3;
+        }
+        th,td{
+            border:2px groove black ;
+            
+        }
+        th{
+             background-color:#8A5F41;
+             color:white;
+        }
+        label{
+           
+            text-align:center;
+            font-size:25px;
+            color:#8A5F41
+        }
+        .box3{
+            text-align:center;
+        }
+        .name{
+            width:200px;
+            height:30px;
+            border-radius: 2px;
+            border:none;
+        }
+        .occasion{
+            font-size:25px;
+            text-align:center; 
+            color:#8A5F41;
+
+        }
+        .radio{
+            color:white;
+            font-size:18px;
+        }
+        .button{
+            background-color:#8A5F41;
+            border:none;
+            height:30px;
+        }
+        footer{
+            background-image:linear-gradient(to right,#8B5E3C,#CFAB8D);
+            color:white;
+            text-align:center;
+        }
+         
+    </style>
+</head>
+<body>
+     <header>
+        <h1>
+            Brew & Bite 60 Cafe ☕
+        </h1>
+        <p> 
+            Where coffee meets conversations
+        </p>
+    <nav>
+        <a href="./intro.html" target="_blank">Home</a>&nbsp;&nbsp;
+        <a href="./about.html" target="_blank">About</a>&nbsp;&nbsp;
+        <a href="./reservation.html" target="_blank">Reservations</a>&nbsp;&nbsp;
+        <a href="./menu.html" target="_blank">Menu</a>&nbsp;&nbsp;
+    </nav>
+    </header>
+    <hr>
+    <div class="box1">
+        <h2>Upcomming Events 🎉</h2>
+        <table align="center" class="events" >
+            <tr>
+                <th colspan="4" style="width:600px; height:30px;">
+                    Upcoming Events
+                </th>
+            </tr>
+            <tr>
+                <th>Category</th>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Time</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Music</td>
+                <td>Live music Night</td>
+                <td> 10 July 2026</td>
+                <td>7 PM</td>
+            </tr>
+            <tr>
+                <td>Acoustic Evening</td>
+                <td> 18 July 2026</td>
+                <td>8 PM</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Workshops</td>
+                <td>Coffee Workshop</td>
+                <td> 15 July 2026</td>
+                <td>5 PM</td>
+            </tr>
+            <tr>
+                <td>Dessert Festival</td>
+                <td> 20 July 2026</td>
+                <td>6 PM</td>
+            </tr>
+        </table>
+
+    </div>
+    <hr>
+
+    <div class="box2">
+        <h2>
+            Reserve Your Table 🍽️
+        </h2>
+        <p style="color:#FFFAF3; text-align:center;">
+            Fill the details and reserve your favorite spot.
+        </p>
+    </div>
+    <hr>
+
+    <div class="box3">
+        <h2>
+            Reservation Form
+        </h2>
+        <label>Full Name</label><br>
+        <input type="text" class="name" placeholder="Enter your Full Name">
+        <br>
+        <br>
+
+        <label>Email</label><br>
+        <input type="mail" class="name" placeholder="Enter Email">
+        <br><br>
+
+        <label>Phone Number</label><br>
+        <input type="number" class="name" placeholder="Enter Mobile NUmber">
+        <br><br>
+
+        <label>Reservation Date</label><br>
+        <input type="date" class="name" style="width:120px">
+        <br><br>
+
+        <label>Reservation Time</label><br>
+        <input type="Time" class="name" style="width:120px">
+        <br><br>
+
+        <label>Number of Guests</label><br>
+        <input type="number" class="name" placeholder="0" style="width:40px;">
+        <br>
+
+        <p class="occasion">Occasion</p>
+        <label class="radio">
+            <input type="radio" class="option-label" value="Birthday"> Birthday
+        </label>
+        <br>
+         <label class="radio">
+            <input type="radio" class="option-label" value="Anniversary"> Anniversary
+        </label>
+        <br>
+        <label class="radio">
+            <input type="radio" class="option-label" value="casual visit"> Casual visit
+        </label>
+
+        <br>
+        <br>
+        <p class="occasion">Food Preference</p>
+        <label class="radio">
+            <input type="radio" class="option-label" value="Vegetarian"> Vegetarian
+        </label>
+        <br>
+         <label class="radio">
+            <input type="radio" class="option-label" value="Non-Vegetarian"> Non-Vegetarian
+        </label>
+        <br>
+        <label class="radio">
+            <input type="radio" class="option-label" value="Vegan"> Vegan
+        </label>
+        <br><br>
+        <label>City</label><br>
+        <input type="text" class="name" placeholder="Enter your City Name">
+        <br>
+        <br>
+        <label>Instagram Profile</label><br>
+        <input type="text" class="name" placeholder="Paste your Profile link">
+        <br>
+        <br>
+        <label>Special Request</label><br>
+        <input type="text" class="name">
+        <br>
+        <br>
+        <button class="button">
+            Reserve Now
+        </button>
+        <button class="button">
+           Reset
+        </button>
+        <hr>
+        
+     <footer>
+        <p style="font-size:22px;"><b>Contact Us 📍</b></p>
+        <p>Email:hello@brewbite.com</p>
+        <p>Phone:+91 9876543210</p>
+        <p>Adress:Hitech City,Hyderabad</p>
+        <p>&copy; 2026 Brew & Bite Cafe.All Rights Reservered. </p>
+    </footer>
+</body>
+</html>

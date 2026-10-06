@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    color: white;
+    margin: 30px;
+}
+
+.moons {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+}
+
+.moon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.m1 {
+    background: linear-gradient(to right, black 50%, white 50%);
+}
+
+.m2 {
+    background: radial-gradient(circle at 25% 50%, black 55%, white 56%);
+}
+
+.m3 {
+    background: radial-gradient(circle at 35% 50%, black 50%, white 51%);
+}
+
+.m4 {
+    background: radial-gradient(circle at 45% 50%, black 45%, white 46%);
+}
+
+.m5 {
+    background: radial-gradient(circle at 55% 50%, black 40%, white 41%);
+}
+
+.m6 {
+    background: radial-gradient(circle at 65% 50%, black 35%, white 36%);
+}
+
+.m7 {
+    background: radial-gradient(circle at 75% 50%, black 30%, white 31%);
+}
+
+.m8 {
+    background-color: white;
+}
+
+.m9 {
+    background: radial-gradient(circle at 25% 50%, black 30%, white 31%);
+}
+
+.m10 {
+    background: radial-gradient(circle at 35% 50%, black 35%, white 36%);
+}
+
+.m11 {
+    background: radial-gradient(circle at 45% 50%, black 40%, white 41%);
+}
+
+.m12 {
+    background: radial-gradient(circle at 55% 50%, black 45%, white 46%);
+}
+
+.m13 {
+    background: radial-gradient(circle at 65% 50%, black 50%, white 51%);
+}
+
+.m14 {
+    background: radial-gradient(circle at 75% 50%, black 55%, white 56%);
+}
+
+.m15 {
+    background: linear-gradient(to left, black 50%, white 50%);
+}
+
+.m16 {
+    background-color: black;
+    border: 2px solid white;
+}
